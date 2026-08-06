@@ -1,0 +1,74 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import SplashScreen from "../components/SplashScreen";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Malisa Maisarah | Social Worker Portfolio",
+  description = "Social Work Graduate | Community Support & Case Documentation",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ms" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <ClientRouter />
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
+    <script is:inline>
+      if (!sessionStorage.getItem("splash-seen")) {
+        document.documentElement.classList.add("splash-active");
+      }
+    </script>
+  </head>
+  <body class="bg-[#FAF9F6] text-slate-800 antialiased">
+    <SplashScreen client:load />
+    <Navbar />
+    <main class="pt-20">
+      <slot />
+    </main>
+    <Footer />
+    <script>
+      function initFadeIn() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: "-40px 0px" }
+        );
+
+        document.querySelectorAll(".fade-in").forEach((el) => {
+          if (!el.classList.contains("is-visible")) {
+            observer.observe(el);
+          }
+        });
+      }
+
+      document.addEventListener("astro:page-load", initFadeIn);
+      initFadeIn();
+    </script>
+  </body>
+</html>

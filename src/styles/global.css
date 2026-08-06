@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-brand-50: #f4f7f2;
+  --color-brand-100: #e4ebe0;
+  --color-brand-200: #c9d7c1;
+  --color-brand-300: #a8bc9b;
+  --color-brand-400: #8ba17a;
+  --color-brand-500: #718662;
+  --color-brand-600: #5a6c4d;
+  --color-brand-700: #47563e;
+  --color-brand-800: #3a4634;
+  --color-brand-900: #303b2c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #a8bc9b #f4f7f2;
+  scrollbar-width: thin;
+}
+
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-thumb { background: #a8bc9b; border-radius: 4px; }
+  ::-webkit-scrollbar-track { background: #f4f7f2; }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF9F6;
+}
+
+::selection {
+  background-color: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+/* Fade-in animation — progressive enhancement */
+.fade-in {
+  opacity: 1;
+}
+
+.js .fade-in {
+  opacity: 0;
+  transform: translate(var(--fade-x, 0), var(--fade-y, 0));
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--fade-delay, 0s);
+}
+
+.js .fade-in.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fade-in--up { --fade-y: 40px; }
+.fade-in--down { --fade-y: -40px; }
+.fade-in--left { --fade-x: 40px; }
+.fade-in--right { --fade-x: -40px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.mobile-menu.is-open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu {
+    transition: none;
+  }
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.45rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 5px);
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: var(--color-brand-500);
+  border: 3px solid var(--color-brand-100);
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* Splash screen — hide content + scrollbar while active */
+.splash-active {
+  overflow: hidden;
+}
+
+.splash-active main {
+  visibility: hidden;
+}

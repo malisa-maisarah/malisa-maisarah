@@ -1,0 +1,233 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FadeIn from "../components/FadeIn.astro";
+---
+
+<BaseLayout
+  title="About Me | Malisa Maisarah"
+  description="Background, experience, and skills of Malisa Maisarah as a social work graduate."
+>
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <!-- Header -->
+    <div class="max-w-3xl mb-16">
+      <FadeIn>
+        <span
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 text-brand-800 text-xs font-semibold tracking-wide mb-6"
+        >
+          About Me
+        </span>
+      </FadeIn>
+      <FadeIn delay={0.1}>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
+          Building a Path in Social Work
+        </h1>
+      </FadeIn>
+    </div>
+
+    <!-- Bio -->
+    <div class="max-w-3xl space-y-6 mb-24">
+      <FadeIn>
+        <p class="text-lg text-slate-600 font-light leading-relaxed">
+          I am a Bachelor of Social Work (Honours) graduate from
+          Universiti Sultan Zainal Abidin (UniSZA), with practical experience
+          in public administration and health services.
+        </p>
+      </FadeIn>
+      <FadeIn delay={0.1}>
+        <p class="text-lg text-slate-600 font-light leading-relaxed">
+          During my internship at Hospital Sultan Abdul Aziz Shah (HSAAS),
+          UPM, I was directly involved in conducting psychosocial assessments,
+          preparing socio-economic reports, and coordinating patient placements
+          to treatment and rehabilitation centres. This experience strengthened
+          my commitment to social work grounded in empathy and well-planned
+          action.
+        </p>
+      </FadeIn>
+      <FadeIn delay={0.2}>
+        <p class="text-lg text-slate-600 font-light leading-relaxed">
+          I was also active in various community welfare programmes throughout
+          university — from anti-drugs, gerontology, to food bank programmes —
+          which taught me the value of teamwork, leadership, and social concern.
+        </p>
+      </FadeIn>
+      <FadeIn delay={0.3}>
+        <p class="text-lg text-slate-600 font-light leading-relaxed">
+          Today, I bring these skills into an administrative role at the
+          Office of the Chief Registrar of the Federal Court, where accuracy
+          and documentation are paramount.
+        </p>
+      </FadeIn>
+    </div>
+
+    <!-- Academic Background -->
+    <div class="mb-24">
+      <FadeIn>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 mb-10">
+          Academic Background
+        </h2>
+      </FadeIn>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <FadeIn delay={0.1}>
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zM12 14v7m0-7l6.16-3.422" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900">Bachelor of Social Work (Honours)</h3>
+                <p class="text-sm text-brand-600 font-medium mt-1">Universiti Sultan Zainal Abidin (UniSZA)</p>
+                <p class="text-sm text-slate-500 mt-1">Okt 2021 – Julai 2025</p>
+                <p class="text-sm text-slate-600 mt-2">CGPA <span class="font-bold text-brand-600">3.68</span></p>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.2}>
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900">KPM Matriculation Certificate</h3>
+                <p class="text-sm text-brand-600 font-medium mt-1">Kolej Matrikulasi Pahang</p>
+                <p class="text-sm text-slate-500 mt-1">Ogos 2020 – Mei 2021</p>
+                <p class="text-sm text-slate-600 mt-2">CGPA <span class="font-bold text-brand-600">3.13</span></p>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+
+    <!-- Kemahiran & Bahasa Bento Grid -->
+    <div class="mb-24">
+      <FadeIn>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 mb-10">
+          Skills & Languages
+        </h2>
+      </FadeIn>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Languages (tall card, 1 col) -->
+        <FadeIn delay={0.1}>
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm h-full">
+            <h3 class="text-lg font-bold text-slate-900 mb-6">Languages</h3>
+            <div class="space-y-5">
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-slate-700 font-medium">Bahasa Melayu</span>
+                  <span class="text-slate-500">Native</span>
+                </div>
+                <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-brand-500 rounded-full" style="width: 100%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-slate-700 font-medium">English</span>
+                  <span class="text-slate-500">Proficient</span>
+                </div>
+                <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-brand-500 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        <!-- Skills (wide card, 2 cols) -->
+        <FadeIn delay={0.15} className="md:col-span-2">
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm h-full">
+            <h3 class="text-lg font-bold text-slate-900 mb-6">Technical Skills</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {["Microsoft Excel", "Microsoft Word", "Google Workspace", "Canva", "CapCut", "Pivot Tables", "Data Validation", "Documentation"].map((skill, i) => (
+                <div key={skill} class="bg-slate-50 px-4 py-3 rounded-xl border border-slate-100 text-center">
+                  <p class="text-sm font-medium text-slate-700">{skill}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+
+    <!-- Timeline: Pengalaman Kerja -->
+    <section>
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <FadeIn>
+          <span
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 text-brand-800 text-xs font-semibold tracking-wide mb-6"
+          >
+            Work Experience
+          </span>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+            Career Timeline
+          </h2>
+        </FadeIn>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <FadeIn delay={0.1} className="timeline-item">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold mb-3">
+            Feb 2026 – present
+          </span>
+          <h3 class="text-lg font-bold text-slate-900">Administrative Assistant (MySTEP)</h3>
+          <p class="text-sm text-brand-600 font-medium mt-1">Office of the Chief Registrar, Federal Court, Putrajaya</p>
+          <p class="text-slate-600 text-sm font-light mt-2 leading-relaxed">
+            Government record management & asset registration, documentation
+            preparation, data entry, and inter-department coordination.
+          </p>
+        </FadeIn>
+
+        <!-- Item 2 -->
+        <FadeIn delay={0.15} className="timeline-item">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold mb-3">
+            Mar – Jul 2025
+          </span>
+          <h3 class="text-lg font-bold text-slate-900">Social Work Intern</h3>
+          <p class="text-sm text-brand-600 font-medium mt-1">Hospital Sultan Abdul Aziz Shah (HSAAS), UPM</p>
+          <p class="text-slate-600 text-sm font-light mt-2 leading-relaxed">
+            50+ psychosocial assessments & patient interviews, 10+ patient
+            placements to care homes & rehabilitation centres.
+          </p>
+        </FadeIn>
+
+        <!-- Item 3 -->
+        <FadeIn delay={0.2} className="timeline-item">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold mb-3">
+            2024
+          </span>
+          <h3 class="text-lg font-bold text-slate-900">Community Programme Coordinator</h3>
+          <p class="text-sm text-brand-600 font-medium mt-1">Various locations</p>
+          <p class="text-slate-600 text-sm font-light mt-2 leading-relaxed">
+            Gerontology Programme, Sentuhan Kasih Jalinan Komuniti, Children's
+            Day Celebration, and Social Science Tour.
+          </p>
+        </FadeIn>
+
+        <!-- Item 4 -->
+        <FadeIn delay={0.25} className="timeline-item">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold mb-3">
+            2023
+          </span>
+          <h3 class="text-lg font-bold text-slate-900">Anti-Drugs Programme</h3>
+          <p class="text-sm text-brand-600 font-medium mt-1">Pondok Remaja Inabah 2, Terengganu</p>
+          <p class="text-slate-600 text-sm font-light mt-2 leading-relaxed">
+            Collaboration in youth awareness and rehabilitation programmes
+            at the community level.
+          </p>
+        </FadeIn>
+      </div>
+    </section>
+  </section>
+</BaseLayout>

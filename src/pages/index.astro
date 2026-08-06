@@ -1,0 +1,371 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FadeIn from "../components/FadeIn.astro";
+import StatCounter from "../components/StatCounter";
+---
+
+<BaseLayout title="Malisa Maisarah | Social Worker Portfolio">
+  <!-- Hero Section -->
+  <section class="relative max-w-6xl mx-auto px-6 py-16 md:py-24 overflow-hidden">
+    <!-- Decorative background -->
+    <div
+      class="absolute -top-32 -right-32 w-96 h-96 bg-brand-100/60 rounded-full blur-3xl pointer-events-none"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="absolute -bottom-32 -left-32 w-96 h-96 bg-brand-50/80 rounded-full blur-3xl pointer-events-none"
+      aria-hidden="true"
+    ></div>
+
+    <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <FadeIn delay={0.1}>
+          <span
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold tracking-wide border border-emerald-100"
+          >
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Open to Opportunities
+          </span>
+        </FadeIn>
+
+        <FadeIn delay={0.2}>
+          <p
+            class="text-brand-600 text-sm font-bold tracking-[0.25em] uppercase"
+          >
+            Malisa Maisarah &middot; Social Work Graduate
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.3}>
+          <h1
+            class="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-[1.15]"
+          >
+            Community Support & Case Documentation
+          </h1>
+        </FadeIn>
+
+        <FadeIn delay={0.45}>
+          <p class="text-lg text-slate-600 font-light max-w-xl leading-relaxed">
+            Helping individuals and communities through psychosocial support
+            and welfare program coordination.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.6}>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a
+              href="/services"
+              class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 shadow-lg shadow-brand-600/20 transition-all"
+            >
+              View My Work
+            </a>
+            <a
+              href="/about"
+              class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-white hover:border-slate-400 transition-all"
+            >
+              About Me
+            </a>
+            <a
+              href="/contact"
+              class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-white hover:border-slate-400 transition-all"
+            >
+              Contact Me
+            </a>
+          </div>
+        </FadeIn>
+      </div>
+
+      <FadeIn delay={0.3} direction="right" className="lg:col-span-5">
+        <div class="relative mx-auto max-w-md lg:max-w-none">
+          <img
+            src="/portfolio_img.jpg"
+            alt="Malisa Maisarah - Social Worker"
+            class="rounded-3xl object-cover w-full h-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+          />
+          <div
+            class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-xl p-5 rounded-2xl border border-slate-100 shadow-xl max-w-[220px]"
+          >
+            <p class="text-3xl font-bold text-brand-600">Dean's List</p>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              6 Consecutive Semesters
+            </p>
+          </div>
+          <div
+            class="absolute top-6 -right-6 bg-white/90 backdrop-blur-xl p-4 rounded-2xl border border-slate-100 shadow-xl"
+          >
+            <p class="text-sm font-bold text-slate-900">Social Work Intern</p>
+            <p class="text-xs text-slate-500 mt-0.5 font-medium">
+              HSAAS, UPM
+            </p>
+          </div>
+        </div>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Areas of Expertise -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <FadeIn>
+        <span
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 text-brand-800 text-xs font-semibold tracking-wide mb-6"
+        >
+          Expertise
+        </span>
+      </FadeIn>
+      <FadeIn delay={0.1}>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+          Areas of Expertise
+        </h2>
+      </FadeIn>
+      <FadeIn delay={0.2}>
+        <p class="text-slate-600 mt-3 font-light">
+          Practical experience in social work, community programmes, and professional administration.
+        </p>
+      </FadeIn>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <FadeIn delay={0.1} className="h-full">
+        <a
+          href="/services"
+          class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-100 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">
+              Psychosocial Assessment & Support
+            </h3>
+            <p class="text-slate-600 mt-3 font-light text-sm leading-relaxed">
+              Conducted 50+ psychosocial assessments and patient interviews
+              during my internship at HSAAS, UPM.
+            </p>
+          </div>
+          <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+      </FadeIn>
+
+      <FadeIn delay={0.2} className="h-full">
+        <a
+          href="/services"
+          class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-100 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">
+              Community Programme Coordination
+            </h3>
+            <p class="text-slate-600 mt-3 font-light text-sm leading-relaxed">
+              Anti-drugs, gerontology, and community welfare programmes
+              delivered in collaboration with local organisations.
+            </p>
+          </div>
+          <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+      </FadeIn>
+
+      <FadeIn delay={0.3} className="h-full">
+        <a
+          href="/services"
+          class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full"
+        >
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-100 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">
+              Documentation & Administration
+            </h3>
+            <p class="text-slate-600 mt-3 font-light text-sm leading-relaxed">
+              Record management, data entry, and inter-department coordination
+              at the Federal Court, Putrajaya.
+            </p>
+          </div>
+          <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 group-hover:gap-2.5 transition-all">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <FadeIn delay={0.1}>
+        <div class="text-center p-8 bg-white rounded-3xl border border-slate-200/80 shadow-sm">
+          <p class="text-4xl font-bold text-brand-600">
+            <StatCounter client:visible target={50} suffix="+" />
+          </p>
+          <p class="text-sm text-slate-500 mt-2 font-medium">Psychosocial Assessments</p>
+        </div>
+      </FadeIn>
+
+      <FadeIn delay={0.2}>
+        <div class="text-center p-8 bg-white rounded-3xl border border-slate-200/80 shadow-sm">
+          <p class="text-4xl font-bold text-brand-600">
+            <StatCounter client:visible target={10} suffix="+" />
+          </p>
+          <p class="text-sm text-slate-500 mt-2 font-medium">Community Programs</p>
+        </div>
+      </FadeIn>
+
+      <FadeIn delay={0.3}>
+        <div class="text-center p-8 bg-white rounded-3xl border border-slate-200/80 shadow-sm">
+          <p class="text-4xl font-bold text-brand-600">
+            <StatCounter client:visible target={6} suffix=" Sem" />
+          </p>
+          <p class="text-sm text-slate-500 mt-2 font-medium">Dean's List</p>
+        </div>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Bio -->
+      <div>
+        <FadeIn>
+          <span
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 text-brand-800 text-xs font-semibold tracking-wide mb-6"
+          >
+            About Me
+          </span>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-6">
+            A Social Work Graduate with a Heart for Community
+          </h2>
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <p class="text-slate-600 font-light leading-relaxed mb-4">
+            I am a Bachelor of Social Work (Honours) graduate from Universiti
+            Sultan Zainal Abidin (UniSZA), with hands-on experience in
+            psychosocial assessment, case documentation, and community
+            programme coordination.
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.3}>
+          <p class="text-slate-600 font-light leading-relaxed mb-8">
+            From hospital internships to community welfare programmes, I bring
+            empathy, structure, and reliability to every role I take on.
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.4}>
+          <a
+            href="/about"
+            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 shadow-lg shadow-brand-600/20 transition-all"
+          >
+            More About Me
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </FadeIn>
+      </div>
+
+      <!-- Quick Facts -->
+      <FadeIn delay={0.2} direction="right">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm h-full">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Bachelor of Social Work (Honours)</h3>
+            <p class="text-xs text-slate-500 mt-1 font-light">UniSZA · CGPA 3.68</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm h-full">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-4-4h8" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Internship — HSAAS, UPM</h3>
+            <p class="text-xs text-slate-500 mt-1 font-light">50+ assessments · 10+ placements</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm h-full">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Dean's List</h3>
+            <p class="text-xs text-slate-500 mt-1 font-light">6 consecutive semesters</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm h-full">
+            <div class="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 text-sm">Administrative Assistant</h3>
+            <p class="text-xs text-slate-500 mt-1 font-light">Federal Court, Putrajaya</p>
+          </div>
+        </div>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <div
+      class="bg-slate-900 text-white rounded-3xl p-10 md:p-16 text-center relative overflow-hidden"
+    >
+      <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+        <FadeIn>
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Open to Work
+          </h2>
+        </FadeIn>
+        <FadeIn delay={0.15}>
+          <p class="text-slate-400 font-light text-base">
+            I am currently open to social work, community development, and
+            administrative roles. Let's discuss how I can contribute to your
+            team or organisation.
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.3}>
+          <div class="pt-4">
+            <a
+              href="/contact"
+              class="inline-block px-8 py-4 rounded-full bg-brand-500 text-white font-medium hover:bg-brand-600 transition-all shadow-lg shadow-brand-500/20"
+            >
+              Let's Connect
+            </a>
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
