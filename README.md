@@ -129,9 +129,3 @@ npx vercel
 - LinkedIn: [linkedin.com/in/malisa-maisarah](https://linkedin.com/in/malisa-maisarah)
 - Location: Federal Territory, Putrajaya
 
-## License
-
-Released under the MIT License. See [LICENSE](./LICENSE) for details.
-Copyright (c) 2026 malisa-maisarah.
-
-Note: the MIT License covers the code and source of this project. Personal content such as the bio, photos, and personal details belongs to Malisa Maisarah binti Azman Suhaimi.
